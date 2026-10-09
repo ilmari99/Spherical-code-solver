@@ -1,0 +1,26 @@
+[project]
+name = "spherical-code-solver"
+version = "1.0.0"
+description = 'Solver, parameters and certificates for "New spherical codes by tuning an annealing solver"'
+readme = "README.md"
+authors = [{name = "Ilmari Vahteristo"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+license = {text = "MIT"}
+
+[project.scripts]
+sphcode = "sphcode.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "python-flint"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sphcode"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+sphcode = ["params/*.json"]

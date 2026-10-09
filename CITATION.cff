@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: 'Solver, parameters and certificates for "New spherical codes by tuning an annealing solver"'
+abstract: >-
+  A solver for the spherical code problem: place N points on the unit sphere in R^D so that
+  the smallest pairwise angle is as large as possible. It repeatedly anneals a LogSumExp
+  surrogate of the largest pairwise cosine, minimizes it with L-BFGS-B and perturbs the points
+  with Student-t noise between anneals. The repository contains the solver, one global
+  parameter set, the parameters fitted separately for each of the 29,670 instances with
+  3 <= D <= 32 and 2D < N <= 1024, and certificates for 24 exact codes.
+authors:
+  - family-names: Vahteristo
+    given-names: Ilmari
+    orcid: "https://orcid.org/0009-0005-3323-3286"
+version: 1.0.0
+doi: 10.5281/zenodo.23270597
+date-released: 2026-10-09
+license: MIT
+repository-code: "https://github.com/ilmari99/Spherical-code-solver"
+url: "https://github.com/ilmari99/Spherical-code-solver"
+keywords:
+  - spherical codes
+  - Tammes problem
+  - sphere packing
+  - global optimization
+  - LogSumExp
+  - L-BFGS-B
+  - parameter tuning
+references:
+  - type: data
+    title: "Table of Spherical Codes"
+    authors:
+      - family-names: Cohn
+        given-names: Henry
+    url: "https://hdl.handle.net/1721.1/153543"

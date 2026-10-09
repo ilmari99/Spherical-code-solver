@@ -1,0 +1,26 @@
+{
+ "parameters": [
+  "beta_min",
+  "r",
+  "s",
+  "sigma",
+  "nu",
+  "rho",
+  "eps"
+ ],
+ "u": [
+  1.2598323809010163,
+  -2.595679141078799,
+  -2.1029439461179433,
+  -0.16782559706885852,
+  -2.517494144527879,
+  6.8904171733451,
+  4.836569851497922
+ ],
+ "provenance": {
+  "date": "2026-08-14",
+  "fit": "CMA-ES, 144 random instances, 60 s episodes, 512 candidates (population 16, 32 generations)",
+  "cpu": "AMD EPYC 9965 192-Core Processor",
+  "concurrent_episodes": 192
+ }
+}
